@@ -10,8 +10,8 @@
 #'@references Hao, Z. et al. (2018). A multivariate approach for  statistical assessments of compound extremes. J. Hydrol., 565: 87-94.
 #'@references  Hao, Z. et al. (2019). A monitoring and prediction system for compound dry and hot events. Environ. Res. Lett., 14:114034.
 #'@examples
-#'mp=matrix(rnorm(120,0,1),ncol=1)
-#'mt=matrix(rnorm(120,0,1),ncol=1)
+#'mp=matrix(rnorm(20,0,1),ncol=1) # 20-year precipitation of a specific month (e.g., August)
+#'mt=matrix(rnorm(20,0,1),ncol=1) # 20-year temperature of a specific month (e.g., August)
 #'threp=20
 #'thret=80
 #'DH<-GetDH(mp,mt,threp,thret)

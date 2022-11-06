@@ -22,8 +22,8 @@ The occurrence of compound dry-hot events (0-1 binary variable)
 Extract compound dry-hot (DH) occurrences based on thresholds of precipitation and temperature. The binary variable of the DH (or dry-warm) event can be obtained.
 }
 \examples{
-mp=matrix(rnorm(120,0,1),ncol=1)
-mt=matrix(rnorm(120,0,1),ncol=1)
+mp=matrix(rnorm(20,0,1),ncol=1) # 20-year precipitation of a specific month (e.g., August)
+mt=matrix(rnorm(20,0,1),ncol=1) # 20-year temperature of a specific month (e.g., August)
 threp=20
 thret=80
 DH<-GetDH(mp,mt,threp,thret)
