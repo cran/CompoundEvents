@@ -1,5 +1,6 @@
 \name{CompoundEvents-package}
 \docType{package}
+\alias{CompoundEvents-package}
 \title{Statistical Modeling of Compound Events}
 \description{
 Tools for extracting occurrences, assessing potential driving factors, predicting occurrences,
@@ -15,7 +16,7 @@ Zengchao Hao
 \references{
 
 
-Hao, Z., et al.( 2013). Changes in concurrent monthly precipitation and temperature extremes. Environ. Res. Lett. 8: 034014.
+Hao, Z., et al.(2013). Changes in concurrent monthly precipitation and temperature extremes. Environ. Res. Lett. 8: 034014.
 
 
 Hao, Z. et al. (2019). A monitoring and prediction system for compound dry and hot events. Environ. Res. Lett., 14:114034.
