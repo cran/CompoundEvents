@@ -7,7 +7,7 @@
 Empdis1(mp)
 }
 \arguments{
-\item{mp}{monthly precipitation}
+\item{mp}{monthly precipitation of a month for several decades}
 }
 \value{
 The empirical probability
@@ -17,8 +17,10 @@ Compute univariate empirical probability
 }
 \examples{
 mp=matrix(rnorm(120,0,1),ncol=1)
-nd<-Empdis1(mp)
+ep1<-Empdis1(mp)
 }
 \references{
-Hao, Z. et al., 2019a. Statistical prediction of the severity of compound dry-hot events based on El Ni??o-Southern Oscillation. J. Hydrol., 572, 243-250.
+Hao, Z. et al., 2019a. Statistical prediction of the
+severity of compound dry-hot events based on El Ni??o-Southern Oscillation.
+J. Hydrol., 572, 243-250.
 }

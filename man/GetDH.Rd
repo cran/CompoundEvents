@@ -19,17 +19,20 @@ GetDH(mp,mt,threp,thret)
 The occurrence of compound dry-hot events (0-1 binary variable)
 }
 \description{
-Extract compound dry-hot (DH) occurrences based on thresholds of precipitation and temperature. The binary variable of the DH (or dry-warm) event can be obtained.
+Get compound dry-hot (DH) events based on thresholds
+precipitation and temperature, resulting in a 0-1The binary variable
 }
 \examples{
-mp=matrix(rnorm(20,0,1),ncol=1) # 20-year precipitation of a specific month (e.g., August)
-mt=matrix(rnorm(20,0,1),ncol=1) # 20-year temperature of a specific month (e.g., August)
-threp=20
-thret=80
-DH<-GetDH(mp,mt,threp,thret)
+mp=matrix(rnorm(60,0,1),ncol=1) # prec. of a month (e.g., August,60 years)
+mt=matrix(rnorm(60,0,1),ncol=1) # temp. of a  month (e.g., August,60 years)
+threp=20 #Specify the percentile-based threshold
+thret=80 #Specify the percentile-based threshold
+DH<-GetDH(mp,mt,threp,thret) # 0-1 series
 }
 \references{
-Hao, Z. et al. (2018). A multivariate approach for  statistical assessments of compound extremes. J. Hydrol., 565: 87-94.
+Hao, Z. et al. (2018). A multivariate approach for  statistical
+assessments of compound extremes. J. Hydrol., 565: 87-94.
 
-Hao, Z. et al. (2019). A monitoring and prediction system for compound dry and hot events. Environ. Res. Lett., 14:114034.
+Hao, Z. et al. (2019). A monitoring and prediction system for
+compound dry and hot events. Environ. Res. Lett., 14:114034.
 }

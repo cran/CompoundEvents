@@ -46,13 +46,13 @@ LMFDH<-function(mp,mt,threp,thret)
 
 
 # The empirical joint probability of the dependence case
-  pd=sum(y)/n
+  pd<-sum(y)/n
 # The joint probability of the independence case
 # For the dry-hot case (e.g., 20th for P and 80th for T gives a 0.04 probability)
-  pi=threp/100*(100-thret)/100
+  pi<-threp/100*(100-thret)/100
 # The likelihood multiplication factor
 
-  lmf=pd/pi
+  lmf<-pd/pi
 
   res<-cbind(pd,pi,lmf)
 
